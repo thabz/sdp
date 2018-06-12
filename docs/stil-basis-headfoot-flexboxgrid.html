@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang=da>
+<head>
+    <title>STIL Flexbox grid, own</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,600" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/stil-baseline-2018.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/stil-tables-2018.css">
+</head>
+    <body>       
+        
+        <header class="stil-header">
+            <div class="stil-col stil-header-content">
+                <em><a href="">Praktikpladsen</a></em>
+            </div>
+            <div class="stil-col stil-header-content stil-logo">
+                <a href="">
+                    <img src="assets/img/stil.svg" alt="Logo for Styrelsen for it og læring" title="Gå til Styrelsen for it og lærings forside">
+                </a>
+            </div>
+        </header>
+        <nav class="stil-topmenu">
+            <div class="stil-col">
+                <div class="stil-row stil-topmenu-items">
+                    <div class="stil-col stil-menu-item-top"><a href="">Menu punkt 1</a></div>
+                    <div class="stil-col stil-menu-item-top"><a href="">Menu punkt 2</a></div>
+                    <div class="stil-col stil-menu-item-top"><a href="">Menu punkt 3</a></div>
+                </div>
+            </div>
+            <div class="stil-col">
+                <span class="stil-logged-in-user">Logget ind som Julia Gardner</span>
+                <input type="button" value="Log ud" class="stil-primary-button">
+            </div>
+        </nav>
+        <main style="">
+            <div class="stil-row">
+                <div class="stil-col">
+                    <h1>Heading 1/.stil-h1. Overskriften er latterligt lang og skulle gerne bryde i to linjer</h1>
+                    <p class="manchet">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin bibendum faucibus justo quis bibendum. 
+                    </p>
+                    <h2>Heading 2/.stil-h2</h2>
+                    <p>
+                        Pellentesque quis dignissim augue. Vestibulum molestie interdum turpis at elementum. Integer venenatis ornare orci, vitae pellentesque quam hendrerit a. In eleifend ullamcorper pretium. Donec efficitur risus elit, ac hendrerit nunc condimentum tincidunt. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam hendrerit enim sed dui accumsan luctus. 
+                    </p>
+                    <p>
+                        Nunc auctor dapibus felis in sodales. Nunc non nibh massa. Cras quis diam vitae ante gravida consectetur. Nam id tincidunt nisl. Suspendisse at tellus nisl. Praesent eleifend tempus malesuada. Cras vitae eros quis purus consectetur luctus in ac dui. Sed congue velit at sagittis posuere.
+                    </p>
+                    <h3>Heading 3/.stil-h3. Donec consectetur erat a porttitor semper. Donec iaculis malesuada ipsum, at tempor massa hendrerit eu.</h3>
+                    <p>
+                        Donec consectetur erat a porttitor semper. Donec iaculis malesuada ipsum, at tempor massa hendrerit eu. Praesent sit amet nibh molestie, scelerisque enim sed, ultrices mauris. In condimentum sem quis finibus posuere. Nunc rhoncus convallis erat et dignissim. Nulla interdum enim tortor, sed auctor ipsum hendrerit id. Morbi porta vestibulum diam, sed lacinia lectus tempus eget. Fusce pellentesque dolor in eros finibus hendrerit. Vestibulum a mattis lorem.
+                    </p>
+                    <h4>Heading 4/.stil-h4</h4>
+                    <p>
+                        Donec consectetur erat a porttitor semper. Donec iaculis malesuada ipsum, at tempor massa hendrerit eu. Praesent sit amet nibh molestie, scelerisque enim sed, ultrices mauris. In condimentum sem quis finibus posuere. Nunc rhoncus convallis erat et dignissim. Nulla interdum enim tortor, sed auctor ipsum hendrerit id. Morbi porta vestibulum diam, sed lacinia lectus tempus eget. Fusce pellentesque dolor in eros finibus hendrerit. Vestibulum a mattis lorem.
+                    </p>
+                </div>
+                <div class="stil-col">
+                    <h2>Heading 2/.stil-h2</h2>
+                    <p>
+                        Donec consectetur erat a porttitor semper. Donec iaculis malesuada ipsum, at tempor massa hendrerit eu. Praesent sit amet nibh molestie, scelerisque enim sed, ultrices mauris. In condimentum sem quis finibus posuere. Nunc rhoncus convallis erat et dignissim. Nulla interdum enim tortor, sed auctor ipsum hendrerit id. Morbi porta vestibulum diam, sed lacinia lectus tempus eget. Fusce pellentesque dolor in eros finibus hendrerit. Vestibulum a mattis lorem.
+                    </p>
+                    <h3>Heading 3/.stil-h3</h3>
+                    <p>
+                        Donec consectetur erat a porttitor semper. Donec iaculis malesuada ipsum, at tempor massa hendrerit eu. Praesent sit amet nibh molestie, scelerisque enim sed, ultrices mauris. In condimentum sem quis finibus posuere. Nunc rhoncus convallis erat et dignissim. Nulla interdum enim tortor, sed auctor ipsum hendrerit id. Morbi porta vestibulum diam, sed lacinia lectus tempus eget. Fusce pellentesque dolor in eros finibus hendrerit. Vestibulum a mattis lorem.
+                    </p>
+                </div>
+            </div>
+            <div class="stil-row">
+                <div class="stil-col"><h2>Dette er en meget lang overskrift for at tjekke line-height og konsekvenserne af det</h2></div>
+                <div class="stil-col"><h2>Links</h2></div>
+            </div>
+            <div class="stil-row">
+                <div class="stil-col">
+                    <h2>Praktiksteder med stillingsopslag</h2>
+                </div>
+            </div>
+            <div class="stil-row">
+                <div class="stil-col">Navigation/filtre</div>
+                <div class="stil-col">                
+                    <div class="stil-row">
+                        <div class="stil-col" style="display: flex; justify-content: flex-start">
+                            <img src="assets/img/tester.jpg" alt="#" style="width:100px;height:100px;margin-right: 16px">
+                            <div style="flex-direction: column">
+                                <h3 style="margin: 0"><a href="">Meyers Bageri</a></h3>
+                                <address>1264 København K</address>
+                                <p><strong>Godkendt til: </strong>Bagværk, bager</p>
+                            </div>
+                        </div>
+                    </div>               
+                    <div class="stil-row">
+                        <div class="stil-col">
+                            <table class="stil-table inline-table">
+                                <caption>STILLINGSOPSLAG</caption>
+                                <tr>
+                                    <th colspan="2" scope="col">Meyers Bageri søger frisk elev</th>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Ledige pladser</th>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Uddannelse</th>
+                                    <td>Bager og konditor / Bager</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Ansøgningsfrist</th>
+                                    <td><time datetime="2018-10-09">09-10-2018</time></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="stil-col">
+                            <table class="stil-table inline-table">
+                                <caption>STILLINGSOPSLAG</caption>
+                                <tr>
+                                    <th colspan="2" scope="col">Alsidig bagerelev søges</th>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Ledige pladser</th>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Uddannelse</th>
+                                    <td>Bager og konditor / Bagværker</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Ansøgningsfrist</th>
+                                    <td><time datetime="2018-11-11">11-11-2018</time></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </main>    
+            
+        <footer class="stil-footer">
+            <div class="stil-col">
+                <em>Styrelsen for it og læring</em>
+                <p>Vester Voldgade 123<br>
+                    1552 København V<br>
+                </p>
+            </div>
+            <div class="stil-col">
+                <em>Support</em>
+                <p>
+                    <a href="">Find hjælp her</a><br>
+                    <a href="tel:+45xxxxxxxx">Tlf. xxxx xxxx</a><br>
+                    <a href="">Opret supportsag</a>
+                </p>
+            </div>
+            <div class="stil-col">
+                <em></em>
+                <p>
+                </p>
+            </div>
+        </footer>
+        
+</body>
+</html>
