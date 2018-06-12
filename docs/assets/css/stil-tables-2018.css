@@ -1,0 +1,306 @@
+/* STIL STANDARD TABLES */
+
+@media only screen {
+    .stil-folding-table,
+    .stil-fixed-col-table,
+    .stil-fixed-headrow-table {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        border-collapse: collapse;
+    }
+
+    .stil-folding-table caption,
+    .stil-fixed-col-table caption,
+    .stil-fixed-headrow-table caption {
+        margin: .5em 0 .75em;
+        font-size: 1.3rem;
+        font-weight: bold;
+        text-align: left;
+    }
+
+    .stil-folding-table th,
+    .stil-folding-table td,
+    .stil-fixed-col-table th,
+    .stil-fixed-col-table td,
+    .stil-fixed-headrow-table th,
+    .stil-fixed-headrow-table td {
+        padding: 6px;
+        text-align: left;
+        vertical-align: top;
+    }
+
+    .stil-folding-table th,
+    .stil-fixed-col-table th,
+    .stil-fixed-headrow-table th {
+        font-weight: bold;
+        color: #000000;
+        background: #c4cbcf;
+        word-break: keep-all;
+    }
+
+    .stil-folding-table tr,
+    .stil-fixed-col-table tr,
+    .stil-fixed-headrow-table tr {
+        background: #ffffff;
+        padding: .35em;
+    }
+
+    .stil-folding-table tr:nth-of-type(odd),
+    .stil-fixed-col-table tr:nth-of-type(odd),
+    .stil-fixed-headrow-table tr:nth-of-type(odd) {
+        background: #e7ebed;
+    }
+
+    .stil-folding-table .transparent,
+    .stil-fixed-col-table .transparent,
+    .stil-fixed-headrow-table .transparent {
+        background: transparent
+    }
+
+    .stil-folding-table tfoot,
+    .stil-folding-table tfoot td,
+    .stil-fixed-col-table tfoot,
+    .stil-fixed-col-table tfoot td,
+    .stil-fixed-headrow-table tfoot,
+    .stil-fixed-headrow-table tfoot td {
+        padding: 10px 0 0 0;
+        font-size: 1.2rem;
+        border: none;
+        border-top: 1px solid #c4cbcf;
+        background: #ffffff;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .stil-folding-table,
+    .stil-fixed-col-table,
+    .stil-fixed-headrow-table {
+        max-width: 100%;
+        table-layout: fixed;
+    }
+    .truncate {
+        /* TRUNCATES THE HEADER ROWS TH CELLS */
+        display: block;
+        overflow: hidden;
+        width: 110px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    /* STIL STANDARD TABLES MOBILE AT 600PX LAYOUT */
+    /* CARD VERSION START */
+    .stil-folding-table thead {
+        position: absolute;
+        height: 1px;
+        width: 1px;
+        margin: -1px;
+        padding: 0;
+        overflow: hidden;
+        border: 0;
+        clip: rect(0, 0, 0, 0);
+    }
+
+    .stil-folding-table tr {
+        display: block;
+        margin-bottom: 10px;
+        border: 1px solid #c4cbcf;
+    }
+
+    .stil-folding-table th,
+    .stil-folding-table td {
+        display: block;
+        border-bottom: 1px solid #c4cbcf;
+    }
+
+    .stil-folding-table td:before {
+        /* DUPLICATES TH DATA AND INSERTS INTO DATA CELL */
+        content: attr(data-label);
+        float: left;
+        width: 100%;
+        margin-right: 10px;
+        font-weight: bold;
+    }
+
+    .stil-folding-table td:last-child {
+        border-bottom: 0;
+    }
+
+
+    .stil-folding-table .truncate {
+        /* TRUNCATES THE HEADER ROWS TH CELLS */
+        display: inline-block;
+        width: 400px;
+    }
+
+    .stil-folding-table tfoot,
+    .stil-folding-table tfoot td {
+        /* HIDES TFOOT ON MOBILE */
+        display: none;
+    }
+    /* CARD VERSION END */
+    /* FROZEN HEADER COL VERSION START */
+    .stil-fixed-col-table-wrapper {
+        overflow-x: scroll;
+        overflow-y: visible;
+        width: 250px;
+        margin-left: 120px;
+        padding-left: 10px;
+    }
+
+    .stil-fixed-col-table {
+        table-layout: fixed;
+        margin-left: -10px;
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+
+    .stil-fixed-col-table::after {
+        /* DRAWS BORDER BELOW FROZEN HEADER COL */
+        content: "";
+        position: absolute;
+        left: 10px;
+        width: 120px;
+        height: 1px;
+        margin-top: -1px;
+        border-top: 1px solid #c4cbcf
+    }
+
+    .stil-fixed-col-table tr:nth-of-type(odd) {
+        /* RESETS ZEBRA-STRIPING */
+        background: #ffffff;
+    }
+
+    .stil-fixed-col-table td,
+    .stil-fixed-col-table th {
+        padding: 5px;
+        width: 120px;
+        vertical-align: top;
+        border: 1px solid #c4cbcf;
+        border-right: 0;
+    }
+
+    .stil-fixed-col-table td {
+        /* ALL DATA-CELLS ARE SAME COLOR TO SEPARATE FROM FROZEN HEADER COL */
+        background: #e7ebed;
+    }
+
+    .stil-fixed-col-table .headcol:first-child {
+        /* FREEZES HEADER COL */
+        display: block;
+        position: absolute;
+        left: 10px;
+        width: 120px;
+        margin: 0;
+        text-align: left;
+        border-right: 0;
+        border-bottom: 0;
+        border-left: 0;
+        padding: 0;
+    }
+
+    .innerDiv {
+        /* FAKES CELL PADDING ON FROZEN HEADER COL */
+        padding: 5px;
+    }
+
+
+    .stil-fixed-headrow-table {
+        width: auto;
+    }
+
+    /* FROZEN HEADER COL VERSION END */
+    /* STIL STANDARD TABLES AT 600PX END */
+}
+
+@media only screen and (max-width: 480px) {
+    /* FOLDING TABLE WIDTH */
+    .stil-folding-table {
+        min-width: 300px;
+    }
+
+    /* FROZEN HEADER ROW VERSION START */
+    .stil-fixed-headrow-table {
+        table-layout: fixed;
+        width: 380px;
+        border-collapse: collapse;
+        border-spacing: 0;
+        margin-left: 10px;
+        overflow-y: scroll;
+        overflow-x: visible;
+    }
+
+    .stil-fixed-headrow-table th,
+    .stil-fixed-headrow-table td {
+        padding: 5px;
+        width: 110px;
+        vertical-align: top;
+        text-align: left;
+        border: 1px solid #c4cbcf;
+    }
+
+    .stil-fixed-headrow-table thead.headrow tr {
+        display: block;
+        position: absolute;
+        width: 360px;
+        padding: 0;
+    }
+
+    .stil-fixed-headrow-table tbody {
+        display: block;
+        overflow: auto;
+        margin-top: 30px;
+        width: 100%;
+        height: 300px;
+    }
+
+    .stil-fixed-headrow-table tbody th,
+    .stil-fixed-headrow-table tbody td {
+        word-break: break-all;
+    }
+    /* FROZEN HEADER ROW VERSION END */
+}
+
+@media print {
+
+    .stil-folding-table,
+    .stil-fixed-col-table,
+    .stil-fixed-headrow-table {
+        max-width: 600pt;
+        border-collapse: collapse;
+    }
+
+    .stil-folding-table caption,
+    .stil-fixed-col-table caption,
+    .stil-fixed-headrow-table caption {
+        padding-bottom: 10pt;
+        text-align: left;
+    }
+    .stil-folding-table th,
+    .stil-fixed-col-table th,
+    .stil-fixed-headrow-table th,
+    .stil-folding-table td,
+    .stil-fixed-col-table td,
+    .stil-fixed-headrow-table td {
+        padding: 5pt 10pt 5pt 0;
+        text-align: left;
+        vertical-align: top;
+        border-top: 1px solid #c4cbcf;
+    }
+
+    .stil-folding-table tr th,
+    .stil-fixed-col-table tr th,
+    .stil-fixed-headrow-table tr th {
+        break-inside: avoid;
+    }
+
+    .truncate {
+        display: inline-block;
+        width: auto;
+    }
+
+
+}
