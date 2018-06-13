@@ -91,11 +91,11 @@
 }
 
 .havblaa-5 {
-    background: #ddeef2;
+    background: #e6f3f8;
 }
 
 .havblaa-6 {
-    background: #f8fbfc;
+    background: #f3f8fa;
 }
 
 .groen-1 {
@@ -143,7 +143,7 @@
 }
 
 .jord-5 {
-    background: #f9f6f1;
+    background: #f9f5f1;
 }
 
 .orange-1 {
@@ -604,13 +604,14 @@
     }
 
     /* PICTURE BOXES AND TILES */
-    .stil-imager-l {
+    .stil-imager-l, .stil-imager-s {
         height: 232px;
         width: 100%;
-        /*background-image: url(../img/smed.jpg);*/
-        background-position: center;
+        background: no-repeat center center;
+        -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
         background-size: cover;
-        border-radius: 4px;
     }
     .stil-tile-s {
         display: flex;
@@ -689,13 +690,6 @@
         font-size: 1.6rem;
         line-height: 2.4rem;
     }
-    /*.stil-header-content img {
-        width: 50%;
-        min-width: 100px;
-        height: auto;
-        margin-top: 8px;
-        padding: 0;
-    }*/
     .stil-topmenu, .stil-logo img {
         display:none;
     }
