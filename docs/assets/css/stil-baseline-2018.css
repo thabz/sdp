@@ -1,16 +1,17 @@
 @font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v14/S6uyw4BMUTPHjx4wWA.woff) format('woff');
-        font-display: swap;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v14/S6uyw4BMUTPHjx4wWA.woff) format('woff');
+    font-display: swap;
 }
+
 @font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v14/S6u9w4BMUTPHh6UVSwiPHw.woff) format('woff');
- font-display: swap;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v14/S6u9w4BMUTPHh6UVSwiPHw.woff) format('woff');
+    font-display: swap;
 }
 
 
@@ -222,7 +223,7 @@
         -ms-hyphens: auto;
         hyphens: auto;
     }
-        
+
 
     h1,
     .stil-h1 {
@@ -291,7 +292,6 @@
         /* MAX LINE-WIDTH FOR READABILITY */
         margin: 0.8rem 0 3.2rem 0;
         padding: 0;
-        font-family: "Lato", Verdana, sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 1.6rem;
@@ -307,7 +307,6 @@
     p,
     .manchet,
     em {
-        font-family: "Lato", Verdana, sans-serif;
         max-width: 60ch;
     }
 
@@ -551,7 +550,7 @@
         white-space: nowrap;
     }
     .stil-col .stil-menu-item-top {
-        max-width: 100px;
+        max-width: 50px;
         margin-right: 16px;
     }
     .stil-primary-button {
@@ -605,13 +604,14 @@
     }
 
     /* PICTURE BOXES AND TILES */
-    .stil-imager-l, .stil-imager-s {
+    .stil-imager-l,
+    .stil-imager-s {
         height: 232px;
         width: 100%;
         background: no-repeat center center;
         -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
         background-size: cover;
     }
     .stil-tile-s {
@@ -685,14 +685,15 @@
     }
     .stil-header {
         margin-bottom: 8px;
-        border-bottom:1px solid #c4cbcf;
+        border-bottom: 1px solid #c4cbcf;
     }
     .stil-header em {
         font-size: 1.6rem;
         line-height: 2.4rem;
     }
-    .stil-topmenu, .stil-logo img {
-        display:none;
+    .stil-topmenu,
+    .stil-logo img {
+        display: none;
     }
     .stil-col {
         flex-basis: auto;
@@ -720,7 +721,7 @@
         font-size: 1.4rem;
         margin: 10px 0 0 0;
     }
-    
+
     .stil-tile-s {
         height: 80px;
         padding: 8px;
@@ -750,7 +751,11 @@
         font-weight: 700;
         font-style: normal;
     }
-    .stil-topmenu, .stil-global-search, .stil-header img, .stil-tile-s, .stil-tile-l {
+    .stil-topmenu,
+    .stil-global-search,
+    .stil-header img,
+    .stil-tile-s,
+    .stil-tile-l {
         display: none;
     }
 
