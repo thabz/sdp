@@ -14,6 +14,9 @@
             .stil-imager-l {
             background-image: url(assets/img/landbrug-v2.jpg);
             }
+            .stil-imager-s {
+            background-image: url(assets/img/sosu.jpg);
+            }
         }
         @media only screen and (min-width: 480px) and (max-width: 768px) {
             main .stil-row:first-of-type { 
@@ -30,49 +33,54 @@
                 display: none;
             }
         }
+        @media only screen and (max-width: 480px) {
+    .stil-imager-s {
+        display:none;
+    }
     
     </style>
 </head>
     <body>       
-        
-        <header class="stil-header">
-            <div class="stil-col stil-header-content">
-                <em><a href="">Praktikpladsen</a></em>
-            </div>
-            <div class="stil-col stil-header-content stil-logo">
-                <a href="">
-                    <img src="assets/img/stil.svg" alt="Logo for Styrelsen for it og læring" title="Gå til Styrelsen for it og lærings forside">
-                </a>
-            </div>
-        </header>
-        <nav class="stil-topmenu">
-            <div class="stil-col">
-                <div class="stil-row stil-topmenu-items">
-                    <div class="stil-col stil-menu-item-top"><a href="">Forside</a></div>
-                    <div class="stil-col stil-menu-item-top"><a href="">Menu punkt 2</a></div>
-                    <div class="stil-col stil-menu-item-top"><a href="">Menu punkt 3</a></div>
+        <div class="stil-full-width">
+            <header class="stil-row stil-header">
+                <div class="stil-col" style="margin-bottom: 0;">
+                    <em class="stil-tjeneste-navn"><a href="">Praktikpladsen</a></em>
                 </div>
-            </div>
-            <div class="stil-col">
-                <span class="stil-logged-in-user">Logget ind som Julia Gardner</span>
-                <input type="button" value="Log ud" class="stil-primary-button antracit-1">
-            </div>
-        </nav>
+                <div class="stil-col" style="margin-bottom: 0;">
+                    <a href="">
+                        <img src="assets/img/stil.svg" alt="Logo for Styrelsen for it og læring" title="Gå til Styrelsen for it og lærings forside" class="stil-logo">
+                    </a>
+                </div>
+            </header>
+        </div>
+        <div class="stil-full-width">
+            <nav class="stil-topmenu">
+                <div class="stil-col">
+                    <div class="stil-row stil-topmenu-items">
+                        <div class="stil-col stil-menu-item-top"><a href="">Forside</a></div>
+                    </div>
+                </div>
+                <div class="stil-col" style="text-align: right">
+                    <input type="button" value="Log ind" class="stil-primary-button antracit-1">
+                </div>
+            </nav>
+        </div>
+        <div class="stil-full-width">
         <main>
             <div class="stil-row hide-on-mobile">
                 <div class="stil-col">
                     <div class="stil-imager-l"></div>
                 </div>
                 <div class="stil-col">
-                    <div class="stil-tile-l orange-2">
+                    <div class="stil-tile-l jord-2">
                         Praktik&shy;pladser til fremtidens faglærte
                     </div>
                 </div>
             </div>
             <div class="stil-row">
                 <div class="stil-col jord-5">
-                    <h2 style="margin: 16px;">Elever</h2>
-                    <ul class="nobullet" style="margin:16px;">
+                    <h2 class="stil-margin">Elever</h2>
+                    <ul class="nobullet stil-margin">
                         <li>
                             <a href="">Min side</a>
                         </li>
@@ -88,8 +96,8 @@
                     </ul>
                 </div>
                 <div class="stil-col havblaa-5">
-                    <h2 style="margin:16px">Virksom&shy;heder</h2>
-                    <ul class="nobullet" style="margin:16px">
+                    <h2 class="stil-margin">Virksom&shy;heder</h2>
+                    <ul class="nobullet stil-margin">
                         <li>
                             <a href="">Virksomhedens side</a>
                         </li>
@@ -108,11 +116,7 @@
                     </ul>
                 </div>
                 <div class="stil-col">
-                    <!--<div class="stil-imager-s"></div>-->
-                    <div class="row" style="flex-direction: column">
-                        <div class="col"><img src="assets/img/video-eksempel.jpg" style="width: 100%" alt="#"></div>
-                        <div class="col">Her kan du se en fin film om unge mænd i blå kedeldragter.</div>
-                    </div>
+                    <div class="stil-imager-s"></div>
                 </div>
             </div>
             <div class="stil-row">
@@ -130,26 +134,33 @@
                 </div>
             </div>
             
-        </main>    
+        </main> 
+        </div>  
             
         <footer class="stil-footer">
             <div class="stil-col">
-                <em>Styrelsen for it og læring</em>
+                <em>Ansvarlig myndighed</em>
+                Styrelsen for it og læring<br>
                 <p>Vester Voldgade 123<br>
                     1552 København V<br>
                 </p>
             </div>
             <div class="stil-col">
-                <em>Support</em>
+                <em>Hjælpende links</em>
                 <p>
                     <a href="">Find hjælp her</a><br>
-                    <a href="tel:+45xxxxxxxx">Tlf. xxxx xxxx</a><br>
-                    <a href="">Opret supportsag</a>
                 </p>
             </div>
             <div class="stil-col">
-                <em></em>
+                <em>Telefonisk support</em>
                 <p>
+                    <a href="tel:+45xxxxxxxx">Tlf. xxxx xxxx</a><br>
+                </p>
+            </div>
+            <div class="stil-col">
+                <em>Skriftlig kontakt</em>
+                <p>
+                    <a href="">Opret supportsag</a>
                 </p>
             </div>
         </footer>
