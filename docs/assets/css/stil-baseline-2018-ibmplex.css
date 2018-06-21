@@ -1,16 +1,17 @@
 @font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local('IBM Plex Sans'), local('IBMPlexSans'), url(https://fonts.gstatic.com/s/ibmplexsans/v2/zYXgKVElMYYaJe8bpLHnCwDKhdHeEw.woff) format('woff');
-font-display:swap;
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('IBM Plex Sans'), local('IBMPlexSans'), url(https://fonts.gstatic.com/s/ibmplexsans/v2/zYXgKVElMYYaJe8bpLHnCwDKhdHeEw.woff) format('woff');
+    font-display: swap;
 }
+
 @font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 700;
-  src: local('IBM Plex Sans Bold'), local('IBMPlexSans-Bold'), url(https://fonts.gstatic.com/s/ibmplexsans/v2/zYX9KVElMYYaJe8bpLHnCwDKjWr7AIFscg.woff) format('woff');
-font-display:swap;
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('IBM Plex Sans Bold'), local('IBMPlexSans-Bold'), url(https://fonts.gstatic.com/s/ibmplexsans/v2/zYX9KVElMYYaJe8bpLHnCwDKjWr7AIFscg.woff) format('woff');
+    font-display: swap;
 }
 
 
@@ -212,7 +213,6 @@ font-display:swap;
 
     body {
         margin: 0 auto;
-        padding: 16px;
         font-family: 'IBM Plex Sans', Tahoma, sans-serif;
         font-size: 1.6rem;
         font-weight: 400;
@@ -323,7 +323,7 @@ font-display:swap;
     li {
         margin-bottom: 8px
     }
-    ul.nobullet {
+    .nobullet {
         list-style-type: none;
         margin: 0.8rem 0 0.8rem 0;
         padding: 0;
@@ -351,6 +351,7 @@ font-display:swap;
     a {
         text-decoration: underline;
         text-underline-position: under;
+        text-decoration-color: #004e6c;
         color: #004e6c;
         transition-duration: 0.2s;
     }
@@ -414,15 +415,6 @@ font-display:swap;
     }
 
     /* MINIMAL FLEXBOX GRID */
-    .stil-site {
-        max-width: 1040px;
-        margin: 0 auto;
-        padding: 0 8px 16px 8px;
-    }
-    main {
-        max-width: 1040px;
-        margin: 0 auto;
-    }
     section,
     nav,
     header,
@@ -442,13 +434,14 @@ font-display:swap;
         align-items: stretch;
         max-width: 1040px;
         margin: 0 auto;
+        padding:0 16px;
     }
     .stil-col {
         flex-grow: 1;
         flex-shrink: 1;
         flex-basis: 0;
         min-width: 1px;
-        margin: 0 0 16px 16px;
+        margin: 8px 0 8px 16px;
         /* DO NOT EDIT UNLESS EDITING THE GRID */
         padding: 0;
     }
@@ -457,6 +450,12 @@ font-display:swap;
     }
     .stil-col:last-of-type {
         margin-right: 0;
+    }
+    main .stil-row:first-of-type {
+        margin-top:8px;
+    }
+    main .stil-row:last-of-type {
+        margin-bottom:8px;
     }
     /* UNEVEN NUMBER OF STIL-COLS - 8/4 GRID - ADJUST ACCORDING TO ROW NUMBER */
     .stil-row:nth-of-type(1) > .stil-col:first-of-type {
@@ -475,35 +474,47 @@ font-display:swap;
         /* ONLY TO BE USED WITH BACKGROUND ON MAIN TAG */
         padding: 0 16px;
     }
+    .stil-margin {
+        margin: 0 16px;
+        padding: 8px 0;
+    }
 
+    .stil-full-width {
+        /* DRAWS HORISONTAL BORDERS LIKE FSG */
+        width: 100%;
+        margin:0;
+        padding: 0;
+        border-bottom: 1px solid #c4cbcf;
+    }
     /* MINIMAL FLEXBOX GRID, END */
+    
     .stil-header {
         margin: 0 auto;
-        padding: 0;
         align-items: baseline
     }
 
     .stil-header-content {
         justify-content: space-between;
         flex-grow: 1;
-        margin: 0;
+        margin: 0 auto;
         padding: 0;
     }
-    .stil-header-content em {
-        font-size: 2.6rem;
+    .stil-tjeneste-navn {
+        margin: 16px 0;
+        font-size: 2.8rem;
         font-style: normal;
-        font-weight: bold;
+        font-weight: 700;
     }
 
-    .stil-header-content em a {
+    .stil-tjeneste-navn a {
         color: #000000;
         text-decoration: none;
     }
 
-    .stil-header-content em a:hover {
+    .stil-tjeneste-navn a:hover {
         background: transparent;
     }
-    .stil-header-content img {
+    .stil-logo {
         height: 80px;
         width: auto;
     }
@@ -515,22 +526,23 @@ font-display:swap;
         margin: 0 8px 0 0;
         font-size: 1.4rem;
     }
+    .stil-row.stil-topmenu-items {
+        padding:0;
+    }
     .stil-topmenu {
         align-items: center;
         height: 48px;
         margin-top: 0;
-        margin-bottom: 16px;
-        padding: 0;
-        border-top: 1px solid #c4cbcf;
-        border-bottom: 1px solid #c4cbcf;
     }
     .stil-topmenu .stil-col {
-        margin: 8px 0 8px 16px;
+        margin: 8px 0 8px 0;
+        padding: 0;
+        background: #fff;
     }
     .stil-topmenu a {
         padding: 8px 0;
         font-size: 1.6rem;
-        font-weight: 700;
+        font-weight: 400;
         white-space: nowrap;
         text-decoration: none;
         color: #4f5355;
@@ -540,19 +552,6 @@ font-display:swap;
     .stil-topmenu a:hover {
         color: #004e6c;
         border-bottom: 6px solid #004e6c;
-    }
-    .stil-topmenu .stil-col {
-        margin: 8px 0 8px 0;
-        padding: 0;
-        background: #fff;
-    }
-    .stil-topmenu .stil-col:last-of-type {
-        text-align: right;
-        white-space: nowrap;
-    }
-    .stil-col .stil-menu-item-top {
-        max-width: 100px;
-        margin-right: 16px;
     }
     .stil-primary-button {
         display: inline-block;
@@ -575,27 +574,20 @@ font-display:swap;
         word-wrap: break-word;
     }
 
-    .stil-footer {
-        border-top: 4px solid #000;
-    }
-
     .stil-footer .stil-col {
         background: #fff;
     }
 
-
     .stil-footer em {
         display: block;
-        margin: 40px 0 8px 0;
+        margin: 0 0 8px 0;
         padding: 0;
         font-size: 1.6rem;
         font-style: normal;
         font-weight: bold;
-        text-transform: uppercase
     }
 
     .stil-footer p {
-        max-width: 65rem;
         margin: 0;
         padding: 0 0 16px 0;
     }
@@ -659,10 +651,6 @@ font-display:swap;
     .stil-topmenu {
         height: 40px;
     }
-    .stil-topmenu-items {
-        /* ONLY FOR TEST PURPOSES */
-        display: none;
-    }
     .hide-on-mobile {
         display: none;
     }
@@ -684,20 +672,27 @@ font-display:swap;
         font-size: 1.8rem;
         line-height: 2.4rem;
     }
+    .stil-full-width:nth-of-type(2) {
+        border-style: none;
+    }
     .stil-header {
+        margin-top: 16px;
         margin-bottom: 8px;
-        border-bottom: 1px solid #c4cbcf;
+        border-style: none;
     }
     .stil-header em {
         font-size: 1.6rem;
         line-height: 2.4rem;
     }
     .stil-topmenu,
-    .stil-logo img {
+    .stil-logo {
         display: none;
     }
     .stil-col {
         flex-basis: auto;
+    }
+    main {
+        margin-bottom: 16px;
     }
     main .stil-row,
     footer {
@@ -706,16 +701,12 @@ font-display:swap;
     main .stil-col,
     .stil-footer .stil-col {
         margin-left: 0;
-        margin-bottom: 5px;
+        margin-bottom: 8px;
         flex-basis: auto;
         width: 100%;
     }
     .stil-footer .stil-col {
         background: #fff;
-    }
-    .stil-topmenu-items {
-        /* ONLY FOR TEST PURPOSES */
-        display: none;
     }
 
     .stil-footer em {
