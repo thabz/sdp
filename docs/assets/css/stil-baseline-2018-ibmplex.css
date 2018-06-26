@@ -353,7 +353,7 @@
         /*text-decoration: underline;
         text-underline-position: under;
         text-decoration-color: #004e6c;*/
-        padding-bottom:0;
+        padding-bottom: 0;
         text-decoration: none;
         color: #004e6c;
         border-bottom: 1px solid #537A93;
@@ -366,34 +366,35 @@
     }
 
     a.visited {
-       /* text-decoration: underline;*/
+        /* text-decoration: underline;*/
         color: #a42104;
     }
-    a:focus,
-    a.link-focus {
-        background: #febb30;
-        outline: 4px solid #febb30;
-    }
-    a:focus,
     button:focus,
     input:focus,
     select:focus,
+    .stil-menu-item-top a:focus,
     .focus {
         outline: 4px solid #febb30;
         outline-offset: 0;
     }
-   h1 a,
+    a:focus {
+        outline: none;
+        background: #febb30;
+    }
+    h1 a,
     h2 a,
     h3 a,
     h4 a,
     h5 a,
     h6 a,
     .manchet a,
-    em a, a img, .stil-topmenu a {
-       border-style: none
+    em a,
+    a img,
+    .stil-topmenu a {
+        border-style: none
     }
-    
-    
+
+
     a.darkBG {
         color: #c4cbcf;
     }
@@ -450,7 +451,7 @@
         align-items: stretch;
         max-width: 1040px;
         margin: 0 auto;
-        padding:0 16px;
+        padding: 0 16px;
     }
     .stil-col {
         flex-grow: 1;
@@ -468,10 +469,10 @@
         margin-right: 0;
     }
     main .stil-row:first-of-type {
-        margin-top:8px;
+        margin-top: 8px;
     }
     main .stil-row:last-of-type {
-        margin-bottom:8px;
+        margin-bottom: 8px;
     }
     /* UNEVEN NUMBER OF STIL-COLS - 8/4 GRID - ADJUST ACCORDING TO ROW NUMBER */
     .stil-row:nth-of-type(1) > .stil-col:first-of-type {
@@ -498,18 +499,17 @@
     .stil-full-width {
         /* DRAWS HORISONTAL BORDERS LIKE FSG */
         width: 100%;
-        margin:0;
+        margin: 0;
         padding: 0;
         border-bottom: 1px solid #c4cbcf;
     }
     /* MINIMAL FLEXBOX GRID, END */
-    
     .stil-header {
         margin: 0 auto;
         align-items: baseline
     }
     .stil-header .stil-col {
-        margin-bottom:0;
+        margin-bottom: 0;
     }
     .stil-tjeneste-navn {
         margin: 16px 0;
@@ -517,16 +517,18 @@
         font-style: normal;
         font-weight: 700;
     }
-    .stil-tjeneste-navn a, .stil-tjeneste-navn a:hover {
+    .stil-tjeneste-navn a,
+    .stil-tjeneste-navn a:hover {
         color: #000000;
         text-decoration: none;
-        border-style:none;
+        border-style: none;
     }
 
     .stil-tjeneste-navn a:hover {
         background: transparent;
     }
-    .stil-logo, .stil-logo:hover {
+    .stil-logo,
+    .stil-logo:hover {
         border-style: none;
     }
     .stil-logo img {
@@ -542,7 +544,7 @@
         font-size: 1.4rem;
     }
     .stil-row.stil-topmenu-items {
-        padding:0;
+        padding: 0;
     }
     .stil-topmenu {
         align-items: center;
