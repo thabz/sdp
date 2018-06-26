@@ -349,19 +349,23 @@
     }
     td {}
     a {
-        text-decoration: underline;
+        /*text-decoration: underline;
         text-underline-position: under;
-        text-decoration-color: #004e6c;
+        text-decoration-color: #004e6c;*/
+        padding-bottom:0;
+        text-decoration: none;
         color: #004e6c;
+        border-bottom: 1px solid #8eb3bf;
         transition-duration: 0.2s;
     }
 
     a:hover {
         color: #000000;
+        border-bottom: 1px solid #000;
     }
 
     a.visited {
-        text-decoration: underline;
+       /* text-decoration: underline;*/
         color: #a42104;
     }
     a:focus,
@@ -377,7 +381,18 @@
         outline: 4px solid #febb30;
         outline-offset: 0;
     }
-
+   h1 a,
+    h2 a,
+    h3 a,
+    h4 a,
+    h5 a,
+    h6 a,
+    .manchet a,
+    em a, a img, .stil-topmenu a {
+       border-style: none
+    }
+    
+    
     a.darkBG {
         color: #c4cbcf;
     }
@@ -492,12 +507,8 @@
         margin: 0 auto;
         align-items: baseline
     }
-
-    .stil-header-content {
-        justify-content: space-between;
-        flex-grow: 1;
-        margin: 0 auto;
-        padding: 0;
+    .stil-header .stil-col {
+        margin-bottom:0;
     }
     .stil-tjeneste-navn {
         margin: 16px 0;
@@ -505,16 +516,19 @@
         font-style: normal;
         font-weight: 700;
     }
-
-    .stil-tjeneste-navn a {
+    .stil-tjeneste-navn a, .stil-tjeneste-navn a:hover {
         color: #000000;
         text-decoration: none;
+        border-style:none;
     }
 
     .stil-tjeneste-navn a:hover {
         background: transparent;
     }
-    .stil-logo {
+    .stil-logo, .stil-logo:hover {
+        border-style: none;
+    }
+    .stil-logo img {
         height: 80px;
         width: auto;
     }
