@@ -88,7 +88,8 @@
 }
 
 .havblaa-3 {
-    background: #8eb3bf;
+    color: #fff;
+    background: #537A93;
 }
 
 .havblaa-4 {
@@ -355,7 +356,7 @@
         padding-bottom:0;
         text-decoration: none;
         color: #004e6c;
-        border-bottom: 1px solid #8eb3bf;
+        border-bottom: 1px solid #537A93;
         transition-duration: 0.2s;
     }
 
