@@ -1,38 +1,72 @@
 <!DOCTYPE html>
 <html lang=da>
 <head>
-    <title>SDP flexbox grid</title>
+    <title>Praktikpladsen, forside</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="description" content="">
     <meta name="keywords" content="">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-    <link rel="preload" href="https://fonts.gstatic.com/s/lato/v14/S6uyw4BMUTPHjx4wWA.woff" as="font" crossorigin>
-    <link rel="preload" href="https://fonts.gstatic.com/s/lato/v14/S6u9w4BMUTPHh6UVSwiPHw.woff" as="font" crossorigin>
+    <link rel="preload" href="https://fonts.gstatic.com/s/ibmplexsans/v2/zYXgKVElMYYaJe8bpLHnCwDKhdHeEw.woff" as="font" crossorigin>
     <link rel="stylesheet" type="text/css" href="assets/css/stil-baseline-2018-ibmplex.css">
+    <style>
+        @media only screen {
+            .stil-imager-l {
+            background-image: url(assets/img/landbrug-v2.jpg);
+            }
+            .stil-imager-s {
+            background-image: url(assets/img/sosu.jpg);
+            }
+        }
+        @media only screen and (min-width: 480px) and (max-width: 768px) {
+            main .stil-row:first-of-type { 
+                height: 160px;
+                flex-direction: column;
+            }
+            .stil-imager-l {
+                height: 144px;
+            }
+            .stil-imager-s {
+                height: 100%;
+            }
+            .stil-tile-l {
+                display: none;
+            }
+        }
+        @media only screen and (max-width: 480px) {
+    .stil-imager-s {
+        display:none;
+    }
+    
+    </style>
 </head>
     <body>       
-        
-        <header class="stil-header">
-            <div class="stil-col stil-header-content">
-                <em><a href="">STIL Design Patterns (SDP)</a></em>
-            </div>
-            <div class="stil-col stil-header-content stil-logo">
-                <a href="">
-                    <img src="assets/img/stil.svg" alt="Logo for Styrelsen for it og læring" title="Gå til Styrelsen for it og lærings forside">
-                </a>
-            </div>
-        </header>
-        <nav class="stil-topmenu">
-            <div class="stil-col">
-                <div class="stil-row stil-topmenu-items">
-                    <div class="stil-col stil-menu-item-top"><a href="">Forside</a></div>
+        <div class="stil-full-width">
+            <header class="stil-row stil-header">
+                <div class="stil-col">
+                    <em class="stil-tjeneste-navn"><a href="">STIL Design Patterns (SDP)</a></em>
                 </div>
-            </div>
-            <div class="stil-col">
-            </div>
-        </nav>
-        <main style="">
+                <div class="stil-col">
+                    <a href="" class="stil-logo">
+                        <img src="assets/img/stil.svg" alt="Logo for Styrelsen for it og læring" title="Gå til Styrelsen for it og lærings forside">
+                    </a>
+                </div>
+            </header>
+        </div>
+        <div class="stil-full-width">
+            <nav class="stil-topmenu">
+                <div class="stil-col">
+                    <div class="stil-row stil-topmenu-items">
+                        <div class="stil-col stil-menu-item-top"><a href="">Forside</a></div>
+                    </div>
+                </div>
+                <div class="stil-col" style="text-align: right">
+                    <input type="button" value="Log ind" class="stil-primary-button antracit-1">
+                </div>
+            </nav>
+        </div>
+        <div class="stil-full-width">
+        <main>
             <div class="stil-row">
                 <div class="stil-col">
                     <h1>Velkommen til SDP</h1>
@@ -51,24 +85,35 @@
                        <a href="https://github.com/stil-ux-team/sdp/tree/master/docs">GitHub</a>
                     </p>
                 </div>
-            </div>            
-        </main>    
+            </div>
+            
+        </main> 
+        </div>  
             
         <footer class="stil-footer">
             <div class="stil-col">
-                <em>Styrelsen for it og læring</em>
+                <em>Ansvarlig myndighed</em>
+                Styrelsen for it og læring<br>
                 <p>Vester Voldgade 123<br>
                     1552 København V<br>
                 </p>
             </div>
             <div class="stil-col">
-                <em>Support</em>
+                <em>Hjælpende links</em>
                 <p>
+                    <a href="">Find hjælp her</a><br>
                 </p>
             </div>
             <div class="stil-col">
-                <em></em>
+                <em>Telefonisk support</em>
                 <p>
+                    <a href="tel:+45xxxxxxxx">Tlf. xxxx xxxx</a><br>
+                </p>
+            </div>
+            <div class="stil-col">
+                <em>Skriftlig kontakt</em>
+                <p>
+                    <a href="">Opret supportsag</a>
                 </p>
             </div>
         </footer>
