@@ -475,13 +475,13 @@
         margin-bottom: 8px;
     }
     /* UNEVEN NUMBER OF STIL-COLS - 8/4 GRID - ADJUST ACCORDING TO ROW NUMBER */
-    .stil-row:nth-of-type(1) > .stil-col:first-of-type {
+   /* .stil-row:nth-of-type(1) > .stil-col:first-of-type {
         flex-grow: 2;
         flex-shrink: 2;
         flex-basis: 16px;
     }
     /* UNEVEN NUMBER OF STIL-COLS - 4/8 GRID - ADJUST ACCORDING TO ROW NUMBER */
-    .stil-row:nth-of-type(4) .stil-col:last-of-type {
+    /*.stil-row:nth-of-type(4) .stil-col:last-of-type {
         flex-grow: 2;
         flex-shrink: 2;
         flex-basis: 16px;
@@ -494,6 +494,11 @@
     .stil-margin {
         margin: 0 16px;
         padding: 8px 0;
+    }
+    
+    .stil-minus-margin {
+        margin: 0;
+        padding:0;
     }
 
     .stil-full-width {
@@ -633,6 +638,17 @@
         font-size: 4rem;
         font-weight: 700;
         line-height: 4.8rem;
+        border-radius: 4px;
+    }
+    .stil-tile-m {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 120px;
+        padding: 16px;
+        font-size: 3.2rem;
+        font-weight: 700;
+        line-height: 4rem;
         border-radius: 4px;
     }
     .stil-tile-l {
