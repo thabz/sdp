@@ -459,7 +459,7 @@
         flex-shrink: 1;
         flex-basis: 0;
         min-width: 1px;
-        margin: 8px 0 8px 16px;
+        margin: 8px 0 8px 32px;
         /* DO NOT EDIT UNLESS EDITING THE GRID */
         padding: 0;
     }
@@ -475,8 +475,11 @@
     main .stil-row:last-of-type {
         margin-bottom: 8px;
     }
+    .stil-narrow-gutter {
+        margin-left: 16px;
+    }
     /* UNEVEN NUMBER OF STIL-COLS - 8/4 GRID - ADJUST ACCORDING TO ROW NUMBER */
-   /* .stil-row:nth-of-type(1) > .stil-col:first-of-type {
+    /* .stil-row:nth-of-type(1) > .stil-col:first-of-type {
         flex-grow: 2;
         flex-shrink: 2;
         flex-basis: 16px;
@@ -496,10 +499,10 @@
         margin: 0 16px;
         padding: 8px 0;
     }
-    
+
     .stil-minus-margin {
         margin: 0;
-        padding:0;
+        padding: 0;
     }
 
     .stil-full-width {
