@@ -577,6 +577,10 @@
         color: #004e6c;
         border-bottom: 6px solid #004e6c;
     }
+    .stil-topmenu a.selected {
+        color: #141516;
+        border-bottom: 6px solid #004e6c;
+    }
     .stil-primary-button {
         display: inline-block;
         padding: 6px 16px;
