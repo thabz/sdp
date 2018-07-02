@@ -463,9 +463,13 @@
         /* DO NOT EDIT UNLESS EDITING THE GRID */
         padding: 0;
     }
-    .stil-col:first-of-type {
+    .stil-col:first-of-type,
+    .stil-row.stil-solid .stil-col:first-of-type {
         margin-left: 0;
     }
+    .stil-row.stil-solid .stil-col { /* ADJUSTS GUTTERS ON BOXED LAYOUT*/
+        margin-left: 16px;
+    } 
     .stil-col:last-of-type {
         margin-right: 0;
     }
@@ -489,9 +493,6 @@
     }
     /* UNEVEN NUMBER END */
     
-    .stil-solid { /* ADJUSTS GUTTERS ON BOXED LAYOUT*/
-        margin-left: 16px;
-    }
     .stil-margin {
         margin: 0 16px;
         padding: 8px 0;
