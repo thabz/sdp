@@ -734,6 +734,7 @@
         flex-wrap: wrap;
     }
     main .stil-col,
+    .stil-row.stil-solid .stil-col,
     .stil-footer .stil-col {
         margin-left: 0;
         margin-bottom: 8px;
