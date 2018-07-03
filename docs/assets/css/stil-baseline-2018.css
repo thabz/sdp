@@ -329,6 +329,10 @@
         letter-spacing: 0.02rem;
         line-height: 1.5;
         color: #000;
+        -webkit-hyphens: none;
+        -moz-hyphens: none;
+        -ms-hyphens: none;
+        hyphens: none;
     }
 
     .stil-table,
@@ -556,25 +560,29 @@
         text-align: right;
     }
 
-    .stil-logged-in-user {
+   /* .stil-logged-in-user {
         margin: 0 8px 0 0;
         font-size: 1.4rem;
-    }
-    .stil-row.stil-topmenu-items {
-        padding: 0;
-    }
+    }*/
     .stil-topmenu {
         align-items: center;
         height: 48px;
         margin-top: 0;
     }
-    .stil-topmenu .stil-col {
+    .stil-topmenu .stil-col { 
+        display: flex;
+        flex-wrap: nowrap;
+        flex-grow: 2;
+        flex-shrink: 2;
         flex-basis: auto;
         margin: 8px 0 8px 0;
         padding: 0;
-        background: #fff;
+    }
+    .stil-topmenu .stil-col:last-of-type { 
+        justify-content: flex-end;
     }
     .stil-topmenu a {
+        margin-right:16px;
         padding: 8px 0;
         font-size: 1.6rem;
         font-weight: 400;
@@ -691,13 +699,13 @@
 @media only screen and (min-width: 480px) and (max-width: 768px) {}
 
 @media only screen and (max-width: 600px) {
-    nav .stil-primary-button {
+    /*nav .stil-primary-button {
         padding: 4px 8px;
         font-size: 1.4rem;
     }
     .stil-topmenu {
         height: 40px;
-    }
+    }*/
     .hide-on-mobile {
         display: none;
     }
