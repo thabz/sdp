@@ -338,6 +338,15 @@
         border-spacing: 0;
         border-collapse: collapse
     }
+    input, textarea {
+        font-family: 'IBM Plex Sans', Tahoma, sans-serif;
+        font-size: 1.6rem;
+        font-weight: 400;
+        letter-spacing: 0.02rem;
+        line-height: 1.5;
+        color: #000;
+    }    
+    
     .stil-table,
     .stil-table caption,
     th,
@@ -351,9 +360,6 @@
     }
     td {}
     a {
-        /*text-decoration: underline;
-        text-underline-position: under;
-        text-decoration-color: #004e6c;*/
         padding-bottom: 0;
         text-decoration: none;
         color: #004e6c;
@@ -367,7 +373,6 @@
     }
 
     a.visited {
-        /* text-decoration: underline;*/
         color: #3e586e;
     }
     button:focus,
@@ -748,6 +753,9 @@
     .stil-footer em {
         font-size: 1.4rem;
         margin: 10px 0 0 0;
+    }
+    .stil-footer p {
+        padding-bottom: 0;
     }
 
     .stil-tile-s {
