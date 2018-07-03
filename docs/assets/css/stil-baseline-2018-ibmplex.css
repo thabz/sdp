@@ -338,15 +338,18 @@
         border-spacing: 0;
         border-collapse: collapse
     }
-    input, textarea {
+    input,
+    textarea,
+    select,
+    button {
         font-family: 'IBM Plex Sans', Tahoma, sans-serif;
         font-size: 1.6rem;
         font-weight: 400;
         letter-spacing: 0.02rem;
         line-height: 1.5;
         color: #000;
-    }    
-    
+    }
+
     .stil-table,
     .stil-table caption,
     th,
@@ -472,9 +475,10 @@
     .stil-row.stil-solid .stil-col:first-of-type {
         margin-left: 0;
     }
-    .stil-row.stil-solid .stil-col { /* ADJUSTS GUTTERS ON BOXED LAYOUT*/
+    .stil-row.stil-solid .stil-col {
+        /* ADJUSTS GUTTERS ON BOXED LAYOUT*/
         margin-left: 16px;
-    } 
+    }
     .stil-col:last-of-type {
         margin-right: 0;
     }
@@ -497,7 +501,6 @@
         flex-basis: 16px;
     }
     /* UNEVEN NUMBER END */
-    
     .stil-margin {
         margin: 0 16px;
         padding: 8px 0;
