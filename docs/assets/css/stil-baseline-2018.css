@@ -366,7 +366,7 @@
     button:focus,
     input:focus,
     select:focus,
-    .stil-menu-item-top a:focus,
+    .stil-topmenu a:focus,
     .tile-link:focus,
     .focus {
         outline: 4px solid #febb30;
