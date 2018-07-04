@@ -311,6 +311,16 @@
         margin: 0.8rem 0 0.8rem 0;
         padding: 0;
     }
+    .nobullet li {
+        margin-bottom: 0.8rem;
+    }
+    
+    .stil-footer .nobullet .em-light {
+        font-style: normal; 
+    }
+    .stil-footer .nobullet span {
+        font-size:1.4rem;
+    }
 
     dl {}
     .stil-table {
